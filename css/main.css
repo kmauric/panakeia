@@ -59,38 +59,38 @@ body {
   font: normal 16px "Roboto Slab", Helvetica, Arial, sans-serif;
   background-color: #edeff1; }
 
-#main-heading {
+section#main-heading {
   width: 100%;
   padding: 45px 0 0 0; }
-  #main-heading header {
+  section#main-heading header {
     padding: 0 0 45px 0; }
-    #main-heading header .container {
+    section#main-heading header .container {
       width: 100%;
       max-width: 1200px;
       margin: 0 auto; }
-      #main-heading header .container {
+      section#main-heading header .container {
         *zoom: 1; }
-      #main-heading header .container:before, #main-heading header .container:after {
+      section#main-heading header .container:before, section#main-heading header .container:after {
         content: " ";
         display: table; }
-      #main-heading header .container:after {
+      section#main-heading header .container:after {
         clear: both; }
-    #main-heading header .logo-container {
+    section#main-heading header .logo-container {
       width: 40%;
       float: left; }
-      #main-heading header .logo-container h1 {
+      section#main-heading header .logo-container h1 {
         font-size: 36px;
         font-weight: bold;
         color: #31353e; }
-      #main-heading header .logo-container p {
+      section#main-heading header .logo-container p {
         color: #dd4b2b; }
-    #main-heading header nav {
+    section#main-heading header nav {
       width: 60%;
       float: right;
       margin: 25px 0 0 0; }
-      #main-heading header nav li {
+      section#main-heading header nav li {
         display: inline-block; }
-      #main-heading header nav a {
+      section#main-heading header nav a {
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         -o-border-radius: 20px;
@@ -103,53 +103,53 @@ body {
         color: #31353e;
         text-decoration: none;
         padding: 10px 23px; }
-        #main-heading header nav a:hover {
+        section#main-heading header nav a:hover {
           color: #fff;
           background: #dd4b2b;
           -webkit-border-radius: 20px;
           -moz-border-radius: 20px;
           -o-border-radius: 20px;
           border-radius: 20px; }
-  #main-heading #banner-section {
+  section#main-heading #banner-section {
     background: #edeff1 url("../img/header-banner.jpg") 0 0 no-repeat;
     background-size: cover;
     text-align: center;
     padding: 485px 0 135px 0; }
-    #main-heading #banner-section .container {
+    section#main-heading #banner-section .container {
       width: 100%;
       max-width: 1200px;
       margin: 0 auto; }
-    #main-heading #banner-section h1 {
+    section#main-heading #banner-section h1 {
       font-size: 72px;
       color: #fff;
       font-weight: lighter; }
-    #main-heading #banner-section p {
+    section#main-heading #banner-section p {
       font-size: 30px;
       color: #fff;
       font-weight: bold;
       margin-bottom: 120px; }
-    #main-heading #banner-section ul {
+    section#main-heading #banner-section ul {
       margin-bottom: 75px; }
-      #main-heading #banner-section ul li {
+      section#main-heading #banner-section ul li {
         display: inline-block;
         width: 30%;
         vertical-align: top;
         margin: 0 18px; }
-      #main-heading #banner-section ul .banner-branding {
+      section#main-heading #banner-section ul .banner-branding {
         display: inline-block; }
-        #main-heading #banner-section ul .banner-branding img {
+        section#main-heading #banner-section ul .banner-branding img {
           margin-bottom: 25px; }
-        #main-heading #banner-section ul .banner-branding h4 {
+        section#main-heading #banner-section ul .banner-branding h4 {
           font-size: 30px;
           font-weight: bold;
           color: #fff;
           margin-bottom: 25px; }
-        #main-heading #banner-section ul .banner-branding p {
+        section#main-heading #banner-section ul .banner-branding p {
           font-size: 16px;
           font-weight: lighter;
           line-height: 1.6;
           margin: 0; }
-    #main-heading #banner-section a.btn-read {
+    section#main-heading #banner-section a.btn-read {
       -webkit-border-radius: 30px;
       -moz-border-radius: 30px;
       -o-border-radius: 30px;
@@ -164,42 +164,42 @@ body {
       color: #612316;
       background: #edeff1;
       padding: 20px 60px; }
-      #main-heading #banner-section a.btn-read:hover {
+      section#main-heading #banner-section a.btn-read:hover {
         color: #fff;
         background: #dd4b2b; }
 
-#our-news {
+section#our-news {
   padding: 80px 0 100px 0;
   text-align: center; }
-  #our-news .container {
+  section#our-news .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto; }
-  #our-news h2 {
+  section#our-news h2 {
     color: #31353e;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 85px; }
-  #our-news ul li {
+  section#our-news ul li {
     display: inline-block;
     width: 30%;
     margin: 0 1.5% 0 1.5%; }
-  #our-news ul img {
+  section#our-news ul img {
     margin-bottom: 35px;
     cursor: pointer; }
-  #our-news ul h4 {
+  section#our-news ul h4 {
     color: #31353e;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 15px; }
-  #our-news ul p {
+  section#our-news ul p {
     color: #31353e;
     font-weight: 400;
     font-size: 15px;
     line-height: 1.8;
     padding: 0 10px;
     margin-bottom: 40px; }
-  #our-news ul a.btn-more {
+  section#our-news ul a.btn-more {
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -o-border-radius: 30px;
@@ -213,26 +213,26 @@ body {
     text-decoration: none;
     background: #fff;
     padding: 20px 55px; }
-    #our-news ul a.btn-more:hover {
+    section#our-news ul a.btn-more:hover {
       background: #dd4b2b;
       color: #fff; }
 
-#newsletter-section {
+section#newsletter-section {
   width: 100%;
   background: linear-gradient(to right, black 0%, rgba(6, 30, 97, 0) 84%, rgba(7, 36, 115, 0) 100%), url("../img/newsletter-and-footer-bg.jpg") center center no-repeat;
   background-size: cover;
   text-align: center;
   padding: 85px 0 105px 0; }
-  #newsletter-section .container {
+  section#newsletter-section .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto; }
-  #newsletter-section h2 {
+  section#newsletter-section h2 {
     font-size: 30px;
     font-weight: bold;
     color: #fff;
     margin-bottom: 25px; }
-  #newsletter-section p {
+  section#newsletter-section p {
     display: block;
     color: #fff;
     font-size: 15px;
@@ -240,7 +240,7 @@ body {
     line-height: 1.6;
     padding: 0 23%;
     margin-bottom: 40px; }
-  #newsletter-section input[type="email"] {
+  section#newsletter-section input[type="email"] {
     width: 300px;
     height: 55px;
     color: #fff;
@@ -249,11 +249,11 @@ body {
     padding: 20px 35px 25px 35px;
     border: none;
     background: transparent url("../img/input-transparent.png") 0 0 no-repeat; }
-    #newsletter-section input[type="email"]::-webkit-input-placeholder {
+    section#newsletter-section input[type="email"]::-webkit-input-placeholder {
       color: #fff; }
-    #newsletter-section input[type="email"]::-moz-input-placeholder {
+    section#newsletter-section input[type="email"]::-moz-input-placeholder {
       color: #fff; }
-  #newsletter-section button.btn-signup {
+  section#newsletter-section button.btn-signup {
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -o-border-radius: 25px;
@@ -272,9 +272,54 @@ body {
     cursor: pointer;
     position: relative;
     left: -30px; }
-    #newsletter-section button.btn-signup:hover {
+    section#newsletter-section button.btn-signup:hover {
       color: #fff;
       background: #dd4b2b;
       border: 1px solid #dd4b2b; }
+
+section#product-details {
+  background: #fff;
+  color: #191b29;
+  padding: 120px 0 140px 0; }
+  section#product-details {
+    *zoom: 1; }
+  section#product-details:before, section#product-details:after {
+    content: " ";
+    display: table; }
+  section#product-details:after {
+    clear: both; }
+  section#product-details .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; }
+  section#product-details #product-one {
+    width: 50%;
+    float: left;
+    margin: 0 0 125px 0; }
+    section#product-details #product-one a {
+      background: #dd4b2b; }
+  section#product-details #product-two {
+    width: 55%;
+    float: right; }
+    section#product-details #product-two a {
+      background: #4b4e73; }
+  section#product-details h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 25px 0; }
+  section#product-details p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 40px 0; }
+  section#product-details a {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    display: inline-block;
+    width: 210px;
+    color: #fff;
+    text-decoration: none;
+    padding: 17px 72px; }
 
 /*# sourceMappingURL=main.css.map */
