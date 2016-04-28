@@ -9,6 +9,7 @@ $product-text: #191b29;
 $secondary-color: #dd4b2b;
 $footer-bg: #d75d0e;
 $font-stack: 'Roboto Slab', Helvetica, Arial, sans-serif;
+$font-stack2: 'Roboto', Helvetica, Arial, sans-serif;
 
 @mixin center($width) {
 	width: 100%;
@@ -307,12 +308,12 @@ section#product-details {
 }  //end product-details section
 footer {
 	color: $white;
-	font-size: 18px;
+	font: normal 18px $font-stack2;
 	text-align: center;
-	background: $footer-bg;
 	.container { @include center(1200px); }
 	#footer-links {
 		@include clearfix();
+		background: $footer-bg;
 		padding: 90px 0 55px 0;
 		ul {
 			width: 33%;
@@ -329,6 +330,17 @@ footer {
 		}
 	}
 	#footer-body {
-		
+		background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(6,30,97,0) 84%, rgba(7,36,115,0) 100%), url('../img/newsletter-and-footer-bg.jpg') 0 0 no-repeat;
+		background-size: cover;
+		padding: 90px 0 240px 0;
+		p {
+			font-weight: lighter;
+			line-height: 1.8;
+		}
+		a {
+			color: $white;
+			text-decoration: none;
+			font-weight: bold;
+		}
 	}
 }

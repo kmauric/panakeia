@@ -324,14 +324,14 @@ section#product-details {
 
 footer {
   color: #fff;
-  font-size: 18px;
-  text-align: center;
-  background: #d75d0e; }
+  font: normal 18px "Roboto", Helvetica, Arial, sans-serif;
+  text-align: center; }
   footer .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto; }
   footer #footer-links {
+    background: #d75d0e;
     padding: 90px 0 55px 0; }
     footer #footer-links {
       *zoom: 1; }
@@ -350,5 +350,16 @@ footer {
       display: block;
       color: #fff;
       text-decoration: none; }
+  footer #footer-body {
+    background: linear-gradient(to right, black 0%, rgba(6, 30, 97, 0) 84%, rgba(7, 36, 115, 0) 100%), url("../img/newsletter-and-footer-bg.jpg") 0 0 no-repeat;
+    background-size: cover;
+    padding: 90px 0 240px 0; }
+    footer #footer-body p {
+      font-weight: lighter;
+      line-height: 1.8; }
+    footer #footer-body a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
