@@ -7,6 +7,8 @@ $primary-color: #31353e;
 $gray-text: #4e5159;
 $product-text: #191b29;
 $secondary-color: #dd4b2b;
+$product-hover1: #cb4528;
+$product-hover2: #414464;
 $footer-bg: #d75d0e;
 $font-stack: 'Roboto Slab', Helvetica, Arial, sans-serif;
 $font-stack2: 'Roboto', Helvetica, Arial, sans-serif;
@@ -253,7 +255,7 @@ section#newsletter-section {
 		font-family: $font-stack;
 		font-size: 18px;
 		width: 210px;
-		height: 55px;
+		height: 57px;
 		background: $white;
 		border: 1px solid $white;
 		cursor: pointer;
@@ -278,6 +280,11 @@ section#product-details {
 		margin: 0 0 125px 0;
 		a {
 			background: $secondary-color;
+			@include transition(all, 0.3s);
+			&:hover { 
+				background: $product-hover1;
+				text-decoration: underline;
+			}
 		}
 	}
 	#product-two {
@@ -285,6 +292,11 @@ section#product-details {
 		float: right;
 		a {
 			background: #4b4e73;
+			@include transition(all, 0.3s);
+			&:hover {
+				background: $product-hover2;
+				text-decoration: underline;
+			}
 		}
 	}
 	h3 {
