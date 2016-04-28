@@ -7,6 +7,7 @@ $primary-color: #31353e;
 $gray-text: #4e5159;
 $product-text: #191b29;
 $secondary-color: #dd4b2b;
+$footer-bg: #d75d0e;
 $font-stack: 'Roboto Slab', Helvetica, Arial, sans-serif;
 
 @mixin center($width) {
@@ -264,7 +265,6 @@ section#newsletter-section {
 		}
 	}
 } //end newsletter-section
-
 section#product-details {
 	@include clearfix();
 	background: $white;
@@ -304,5 +304,31 @@ section#product-details {
 		text-decoration: none;
 		padding: 17px 72px;
 		}
-	
+}  //end product-details section
+footer {
+	color: $white;
+	font-size: 18px;
+	text-align: center;
+	background: $footer-bg;
+	.container { @include center(1200px); }
+	#footer-links {
+		@include clearfix();
+		padding: 90px 0 55px 0;
+		ul {
+			width: 33%;
+			float: left;
+		}
+		li {
+			display: block;
+			margin: 0 0 20px 0;
+		}
+		a {
+			display: block;
+			color: $white;
+			text-decoration: none;
+		}
+	}
+	#footer-body {
+		
+	}
 }

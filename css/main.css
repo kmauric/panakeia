@@ -322,4 +322,33 @@ section#product-details {
     text-decoration: none;
     padding: 17px 72px; }
 
+footer {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  background: #d75d0e; }
+  footer .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; }
+  footer #footer-links {
+    padding: 90px 0 55px 0; }
+    footer #footer-links {
+      *zoom: 1; }
+    footer #footer-links:before, footer #footer-links:after {
+      content: " ";
+      display: table; }
+    footer #footer-links:after {
+      clear: both; }
+    footer #footer-links ul {
+      width: 33%;
+      float: left; }
+    footer #footer-links li {
+      display: block;
+      margin: 0 0 20px 0; }
+    footer #footer-links a {
+      display: block;
+      color: #fff;
+      text-decoration: none; }
+
 /*# sourceMappingURL=main.css.map */
