@@ -56,8 +56,8 @@ section#main-heading {
 			ul {
 				display: block;
 				@include tablet {
-				display: none;
-			}
+					display: none;
+				}
 			}
 			.mobile-nav {
 				width: 45%;
@@ -105,13 +105,12 @@ section#main-heading {
 				padding: 10px 23px;
 				@include desktop-small {
 					padding: 10px 15px;
-				}
+				} //end desktop-small
 				&:hover {
 					color: $white;
 					background: $secondary-color;
 					@include border-radius(20px);
 					@include tablet {
-						color: $primary-color;
 						background: none;
 						border-radius: 0;
 						}
@@ -120,7 +119,7 @@ section#main-heading {
 			.toggle-nav {
 				@include tablet {
 					display: block;
-				}
+				} //end tablet
 				display: none;
 				font-size: 3.8rem;
 				position: absolute;
@@ -129,12 +128,11 @@ section#main-heading {
 				&:hover {
 					background: none;
 					color: $secondary-color;
-				}
-			}
+				} //end toggle-nav hover
+			} //end toggle-nav
 			.active {
 				color: $secondary-color;
-			}
-			
+			} //end active	
 		} //end nav
 	} //end main-heading
 	
@@ -215,7 +213,7 @@ section#our-news {
 		} //end li
 		li:nth-child(2) {
 			margin: 0 2%;
-		}
+		} //end li:nth-child(2)
 		img {
 			margin-bottom: 35px;
 			cursor: pointer;
@@ -267,7 +265,7 @@ section#newsletter-section {
 		font-weight: bold;
 		color: $white;
 		margin-bottom: 25px;
-	}
+	} //end h2
 	p {
 		display: block;
 		color: $white;
@@ -276,7 +274,7 @@ section#newsletter-section {
 		line-height: 1.6;
 		padding: 0 23%;
 		margin-bottom: 40px;
-	}
+	} //end p
 	input[type="email"] {
 		width: 300px;
 		height: 55px;
@@ -288,11 +286,11 @@ section#newsletter-section {
 		background: transparent url('../img/input-transparent.png')0 0 no-repeat;
 		&::-webkit-input-placeholder {
 			color: $white;
-		}
+		} //end webkit placeholder
 		&::-moz-input-placeholder {
 			color: $white;
-		}
-	}
+		} //end moz placeholder
+	} //end input email
 	button.btn-signup {
 		@include border-radius(25px);
 		@include transition(all, 0.3s);
@@ -310,8 +308,8 @@ section#newsletter-section {
 			color: $white;
 			background: $secondary-color;
 			border: 1px solid $secondary-color;
-		}
-	}
+		} //end hover
+	} //end btn-signup
 } //end newsletter-section
 section#product-details {
 	@include clearfix();

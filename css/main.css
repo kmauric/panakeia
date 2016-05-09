@@ -252,12 +252,11 @@ section#main-heading nav a:hover {
 @media screen and (min-width: 768px) and (max-width: 860px) {
   /* line 109, main.scss */
   section#main-heading nav a:hover {
-    color: #31353e;
     background: none;
     border-radius: 0;
   }
 }
-/* line 120, main.scss */
+/* line 119, main.scss */
 section#main-heading nav .toggle-nav {
   display: none;
   font-size: 3.8rem;
@@ -266,82 +265,82 @@ section#main-heading nav .toggle-nav {
   bottom: -15px;
 }
 @media screen and (min-width: 768px) and (max-width: 860px) {
-  /* line 120, main.scss */
+  /* line 119, main.scss */
   section#main-heading nav .toggle-nav {
     display: block;
   }
 }
-/* line 129, main.scss */
+/* line 128, main.scss */
 section#main-heading nav .toggle-nav:hover {
   background: none;
   color: #dd4b2b;
 }
-/* line 134, main.scss */
+/* line 133, main.scss */
 section#main-heading nav .active {
   color: #dd4b2b;
 }
 
-/* line 141, main.scss */
+/* line 139, main.scss */
 #banner-section {
   background: #edeff1 url("../img/header-banner.jpg") 0 0 no-repeat;
   background-size: cover;
   text-align: center;
   padding: 485px 0 135px 0;
 }
-/* line 146, main.scss */
+/* line 144, main.scss */
 #banner-section .container {
   width: 100%;
   max-width: 1200px;
   padding: 0 3%;
   margin: 0 auto;
 }
-/* line 147, main.scss */
+/* line 145, main.scss */
 #banner-section h1 {
   font-size: 7.2rem;
   color: white;
   font-weight: lighter;
 }
-/* line 152, main.scss */
+/* line 150, main.scss */
 #banner-section p {
   font-size: 3rem;
   color: white;
   font-weight: bold;
   margin-bottom: 120px;
 }
-/* line 158, main.scss */
+/* line 156, main.scss */
 #banner-section ul {
   margin-bottom: 75px;
 }
-/* line 159, main.scss */
+/* line 157, main.scss */
 #banner-section ul li {
   display: inline-block;
   width: 30%;
   vertical-align: top;
   margin: 0 1.5%;
 }
-/* line 165, main.scss */
+/* line 163, main.scss */
 #banner-section ul .banner-branding {
   display: inline-block;
 }
-/* line 167, main.scss */
+/* line 165, main.scss */
 #banner-section ul .banner-branding img {
   margin-bottom: 25px;
 }
-/* line 170, main.scss */
+/* line 168, main.scss */
 #banner-section ul .banner-branding h4 {
   font-size: 3rem;
   font-weight: bold;
   color: white;
   margin-bottom: 25px;
 }
-/* line 176, main.scss */
+/* line 174, main.scss */
 #banner-section ul .banner-branding p {
   font-size: 1.6rem;
   font-weight: lighter;
   line-height: 1.6;
   margin: 0;
 }
-/* line 184, main.scss */
+/* line 182, main.scss */
 #banner-section a.btn-read {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -358,55 +357,55 @@ section#main-heading nav .active {
   background: #edeff1;
   padding: 20px 60px;
 }
-/* line 193, main.scss */
+/* line 191, main.scss */
 #banner-section a.btn-read:hover {
   color: #fff;
   background: #dd4b2b;
 }
 
-/* line 200, main.scss */
+/* line 198, main.scss */
 section#our-news {
   padding: 80px 0 100px 0;
   text-align: center;
 }
-/* line 203, main.scss */
+/* line 201, main.scss */
 section#our-news .container {
   width: 100%;
   max-width: 1200px;
   padding: 0 3%;
   margin: 0 auto;
 }
-/* line 204, main.scss */
+/* line 202, main.scss */
 section#our-news h2 {
   color: #31353e;
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 85px;
 }
-/* line 211, main.scss */
+/* line 209, main.scss */
 section#our-news ul li {
   display: inline-block;
   width: 30%;
   margin: 0;
 }
-/* line 216, main.scss */
+/* line 214, main.scss */
 section#our-news ul li:nth-child(2) {
   margin: 0 2%;
 }
-/* line 219, main.scss */
+/* line 217, main.scss */
 section#our-news ul img {
   margin-bottom: 35px;
   cursor: pointer;
   width: 100%;
 }
-/* line 227, main.scss */
+/* line 225, main.scss */
 section#our-news ul h4 {
   color: #31353e;
   font-size: 2.4rem;
   font-weight: bold;
   margin-bottom: 15px;
 }
-/* line 233, main.scss */
+/* line 231, main.scss */
 section#our-news ul p {
   color: #31353e;
   font-weight: 400;
@@ -415,7 +414,7 @@ section#our-news ul p {
   padding: 0 1%;
   margin-bottom: 40px;
 }
-/* line 241, main.scss */
+/* line 239, main.scss */
 section#our-news ul a.btn-more {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -432,13 +431,13 @@ section#our-news ul a.btn-more {
   background: white;
   padding: 20px 18%;
 }
-/* line 250, main.scss */
+/* line 248, main.scss */
 section#our-news ul a.btn-more:hover {
   background: #dd4b2b;
   color: white;
 }
 
-/* line 258, main.scss */
+/* line 256, main.scss */
 section#newsletter-section {
   width: 100%;
   background: linear-gradient(to right, #000000 0%, rgba(6, 30, 97, 0) 84%, rgba(7, 36, 115, 0) 100%), url("../img/newsletter-and-footer-bg.jpg") center center no-repeat;
@@ -446,21 +445,21 @@ section#newsletter-section {
   text-align: center;
   padding: 85px 0 105px 0;
 }
-/* line 264, main.scss */
+/* line 262, main.scss */
 section#newsletter-section .container {
   width: 100%;
   max-width: 1200px;
   padding: 0 3%;
   margin: 0 auto;
 }
-/* line 265, main.scss */
+/* line 263, main.scss */
 section#newsletter-section h2 {
   font-size: 3rem;
   font-weight: bold;
   color: white;
   margin-bottom: 25px;
 }
-/* line 271, main.scss */
+/* line 269, main.scss */
 section#newsletter-section p {
   display: block;
   color: white;
@@ -470,7 +469,7 @@ section#newsletter-section p {
   padding: 0 23%;
   margin-bottom: 40px;
 }
-/* line 280, main.scss */
+/* line 278, main.scss */
 section#newsletter-section input[type="email"] {
   width: 300px;
   height: 55px;
@@ -481,15 +480,15 @@ section#newsletter-section input[type="email"] {
   border: none;
   background: transparent url("../img/input-transparent.png") 0 0 no-repeat;
 }
-/* line 289, main.scss */
+/* line 287, main.scss */
 section#newsletter-section input[type="email"]::-webkit-input-placeholder {
   color: white;
 }
-/* line 292, main.scss */
+/* line 290, main.scss */
 section#newsletter-section input[type="email"]::-moz-input-placeholder {
   color: white;
 }
-/* line 296, main.scss */
+/* line 294, main.scss */
 section#newsletter-section button.btn-signup {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -510,14 +509,14 @@ section#newsletter-section button.btn-signup {
   position: relative;
   left: -30px;
 }
-/* line 309, main.scss */
+/* line 307, main.scss */
 section#newsletter-section button.btn-signup:hover {
   color: white;
   background: #dd4b2b;
   border: 1px solid #dd4b2b;
 }
 
-/* line 316, main.scss */
+/* line 314, main.scss */
 section#product-details {
   background: white;
   color: #191b29;
@@ -536,20 +535,20 @@ section#product-details:before, section#product-details:after {
 section#product-details:after {
   clear: both;
 }
-/* line 321, main.scss */
+/* line 319, main.scss */
 section#product-details .container {
   width: 100%;
   max-width: 1200px;
   padding: 0 3%;
   margin: 0 auto;
 }
-/* line 322, main.scss */
+/* line 320, main.scss */
 section#product-details #product-one {
   width: 50%;
   float: left;
   margin: 0 0 125px 0;
 }
-/* line 326, main.scss */
+/* line 324, main.scss */
 section#product-details #product-one a {
   background: #dd4b2b;
   -webkit-transition: all 0.3s;
@@ -557,17 +556,17 @@ section#product-details #product-one a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 329, main.scss */
+/* line 327, main.scss */
 section#product-details #product-one a:hover {
   background: #cb4528;
   text-decoration: underline;
 }
-/* line 335, main.scss */
+/* line 333, main.scss */
 section#product-details #product-two {
   width: 55%;
   float: right;
 }
-/* line 338, main.scss */
+/* line 336, main.scss */
 section#product-details #product-two a {
   background: #4b4e73;
   -webkit-transition: all 0.3s;
@@ -575,24 +574,24 @@ section#product-details #product-two a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 341, main.scss */
+/* line 339, main.scss */
 section#product-details #product-two a:hover {
   background: #414464;
   text-decoration: underline;
 }
-/* line 347, main.scss */
+/* line 345, main.scss */
 section#product-details h3 {
   font-size: 3rem;
   font-weight: bold;
   margin: 0 0 25px 0;
 }
-/* line 352, main.scss */
+/* line 350, main.scss */
 section#product-details p {
   font-size: 1.6rem;
   line-height: 1.8;
   margin: 0 0 40px 0;
 }
-/* line 357, main.scss */
+/* line 355, main.scss */
 section#product-details a {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -606,20 +605,20 @@ section#product-details a {
   padding: 17px 72px;
 }
 
-/* line 367, main.scss */
+/* line 365, main.scss */
 footer {
   color: white;
   font: normal 1.8rem "Roboto", Helvetica, Arial, sans-serif;
   text-align: center;
 }
-/* line 371, main.scss */
+/* line 369, main.scss */
 footer .container {
   width: 100%;
   max-width: 1200px;
   padding: 0 3%;
   margin: 0 auto;
 }
-/* line 372, main.scss */
+/* line 370, main.scss */
 footer #footer-links {
   background: #d75d0e;
   padding: 90px 0 55px 0;
@@ -637,34 +636,34 @@ footer #footer-links:before, footer #footer-links:after {
 footer #footer-links:after {
   clear: both;
 }
-/* line 376, main.scss */
+/* line 374, main.scss */
 footer #footer-links ul {
   width: 33%;
   float: left;
 }
-/* line 380, main.scss */
+/* line 378, main.scss */
 footer #footer-links li {
   display: block;
   margin: 0 0 20px 0;
 }
-/* line 384, main.scss */
+/* line 382, main.scss */
 footer #footer-links a {
   display: block;
   color: white;
   text-decoration: none;
 }
-/* line 390, main.scss */
+/* line 388, main.scss */
 footer #footer-body {
   background: linear-gradient(to right, #000000 0%, rgba(6, 30, 97, 0) 84%, rgba(7, 36, 115, 0) 100%), url("../img/newsletter-and-footer-bg.jpg") 0 0 no-repeat;
   background-size: cover;
   padding: 90px 0 240px 0;
 }
-/* line 394, main.scss */
+/* line 392, main.scss */
 footer #footer-body p {
   font-weight: lighter;
   line-height: 1.8;
 }
-/* line 398, main.scss */
+/* line 396, main.scss */
 footer #footer-body a {
   color: white;
   text-decoration: none;
