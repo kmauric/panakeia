@@ -1,4 +1,4 @@
-@import "compass/reset";
+@import "reset";
 @import "variables";
 @import "mixins";
 
@@ -31,10 +31,18 @@ section#main-heading {
 			float: left;
 			@include desktop-small {
 				width: 25%;
-			}
+			} //end desktop-small
 			@include tablet {
 				width: 22%;
-			}
+			} //end tablet
+			@include mobile-medium {
+				width: 50%;
+				padding: 0 0 0 20px;
+			} //end mobile-medium
+			@include mobile-small {
+				width: 65%;
+				padding: 0 0 0 20px;
+			} //end mobile-small
 			h1 {
 				font-size: 3.6rem;
 				font-weight: bold;
@@ -52,21 +60,55 @@ section#main-heading {
 			position: relative;
 			@include desktop-small {
 				width: 75%;
-			}
+			} //end desktop-small
+			@include mobile-medium {
+				width: 50%;
+			} //end mobile-medium
+			@include mobile-small {
+				width: 35%;
+			} //end mobile-small
 			ul {
 				display: block;
 				@include tablet {
 					display: none;
-				}
-			}
+				} //end tablet
+				@include tablet-small {
+					display: none;
+				} //end tablet-small
+				@include mobile-medium {
+					display: none;
+				} //end mobile-medium
+				@include mobile-small {
+					display: none;
+				} //end mobile-small
+			} //end ul
 			.mobile-nav {
+				@include transition(all, 0.3s);
 				width: 45%;
 				display: block;
 				background: darken($ltgray-bg, 5%);
 				position: absolute;
 				top: 30px;
 				right: 45px;
+				@include mobile-medium {
+					width: 65%;
+					right: 40px;
+				} //end mobile-medium
+				@include mobile-small {
+					width: 100%;
+					top: 35px;
+					right: 33px;
+				}
 				&::after {
+					@include tablet-small {
+						right: 0;
+					} //end tablet-small
+					@include mobile-medium {
+						right: 0;
+					} //end mobile-medium
+					@include mobile-small {
+						right: 0;
+					} //end mobile-small
 					width: 0;
 					height: 0;
 					position: absolute;
@@ -77,14 +119,25 @@ section#main-heading {
 					border-left: 15px solid transparent;
 					border-right: 15px solid transparent;
 					border-bottom: 15px solid $secondary-color;
-				}
-			}
+				} //end &::after
+			} //end .mobile-nav
 			
 			li { display: inline-block; 
 				@include desktop-small {
 					margin: 0 .5%;
-				}
+				} //end desktop-small
 				@include tablet {
+					display: block;
+					border-bottom: 1px dashed lighten($primary-color, 30%);
+					padding: 25px 0;
+					&:hover {
+						background: $secondary-color;
+					} //end hover
+					&:last-of-type {
+						border-bottom: none;
+					} //end last-of-type
+				} //end tablet
+				@include tablet-small {
 					display: block;
 					border-bottom: 1px dashed lighten($primary-color, 30%);
 					padding: 25px 0;
@@ -94,7 +147,29 @@ section#main-heading {
 					&:last-of-type {
 						border-bottom: none;
 					}
-				}
+				} //end tablet-small
+				@include mobile-medium {
+					display: block;
+					border-bottom: 1px dashed lighten($primary-color, 30%);
+					padding: 25px 0;
+					&:hover {
+						background: $secondary-color;
+					}
+					&:last-of-type {
+						border-bottom: none;
+					}
+				} //end mobile-medium
+				@include mobile-small {
+					display: block;
+					border-bottom: 1px dashed lighten($primary-color, 30%);
+					padding: 25px 0;
+					&:hover {
+						background: $secondary-color;
+					}
+					&:last-of-type {
+						border-bottom: none;
+					}
+				} //end mobile-small
 			}
 			a {
 				@include border-radius(20px);
@@ -106,6 +181,19 @@ section#main-heading {
 				@include desktop-small {
 					padding: 10px 15px;
 				} //end desktop-small
+				@include tablet-small {
+					font-size: 1.5rem;
+					padding: 10px 15px;
+					border-radius: 0;
+				}
+				@include mobile-medium {
+					font-size: 1.4rem;
+					padding: 10px;
+				}
+				@include mobile-small {
+					font-size: 1.4rem;
+					padding: 5px;
+				} //end mobile-small
 				&:hover {
 					color: $white;
 					background: $secondary-color;
@@ -113,13 +201,22 @@ section#main-heading {
 					@include tablet {
 						background: none;
 						border-radius: 0;
-						}
-					} //end a:hover
-				} //end a	
+					} //end tablet
+					@include tablet-small {
+						background: none;
+						border-radius: 0;
+					} //end tablet-small
+					@include mobile-medium {
+						background: none;
+						border-radius: 0;
+					} //end mobile-medium
+					@include mobile-small {
+						background: none;
+						border-radius: 0;
+					} //end mobile-small
+				} //end a:hover
+			} //end a	
 			.toggle-nav {
-				@include tablet {
-					display: block;
-				} //end tablet
 				display: none;
 				font-size: 3.8rem;
 				position: absolute;
@@ -129,6 +226,21 @@ section#main-heading {
 					background: none;
 					color: $secondary-color;
 				} //end toggle-nav hover
+				@include tablet {
+					@include transition(all, 0.4s);
+					display: block;
+				} //end tablet
+				@include tablet-small {
+					display: block;
+				}
+				@include mobile-medium {
+					display: block;
+					bottom: -25px;
+				}
+				@include mobile-small {
+					display: block;
+					bottom: -25px;
+				}
 			} //end toggle-nav
 			.active {
 				color: $secondary-color;
@@ -141,41 +253,117 @@ section#main-heading {
 		background-size: cover;
 		text-align: center;
 		padding: 485px 0 135px 0;
+		@include tablet-small {
+			padding: 300px 0 135px 0;
+		} //end tablet-small
+		@include mobile-medium {
+			padding: 120px 0 140px 0;
+		} //end mobile-medium
+		@include mobile-small {
+			padding: 60px 0 80px 0;
+		} //end mobile-small
 		.container { @include center(1200px); } 
 		h1 {
 			font-size: 7.2rem;
 			color: $white;
 			font-weight: lighter;
+			@include tablet-small {
+				font-size: 4rem;
+			} //end tablet-small
+			@include mobile-medium {
+				font-size: 3rem;
+			} //end mobile-medium
+			@include mobile-small {
+				font-size: 2.5rem;
+				margin-bottom: 10px;
+			} //end mobile-small
 		} //end h1
 		p {
 			font-size: 3rem;
 			color: $white;
 			font-weight: bold;
 			margin-bottom: 120px;
+			@include tablet-small {
+				font-size: 2rem;
+				margin-bottom: 140px;
+			} //end tablet-small
+			@include mobile-medium {
+				font-size: 1.8rem;
+				margin-bottom: 80px;
+			} //end mobile-medium
+			@include mobile-small {
+				font-size: 1.5rem;
+				margin-bottom: 60px;
+			}
 		} //end p	
 		ul { margin-bottom: 75px;
+			@include mobile-small {
+				margin: 30px;
+			} //end mobile-small
 			li {
 				display: inline-block;
 				width: 30%;
 				vertical-align: top;
 				margin: 0 1.5%;
+				@include tablet-small {
+					width: 100%;
+					display: block;
+					margin: 0;
+				} //end tablet-small
+				@include mobile-medium {
+					width: 100%;
+					display: block;
+					margin: 0;
+				} //end mobile-medium
+				@include mobile-small {
+					width: 100%;
+					display: block;
+					margin: 0;
+				} //end mobile-small
 			} //end li
 			.banner-branding {
 				display: inline-block;
 				img {
-				margin-bottom: 25px;
+					margin-bottom: 25px;
+					@include mobile-small {
+						margin-bottom: 15px;
+					} //end mobile-small
 				} //end img
 				h4 {
 					font-size: 3rem;
 					font-weight: bold;
 					color: $white;
 					margin-bottom: 25px;
-					} //end h4
+					@include tablet-small {
+						font-size: 2rem;
+						margin-bottom: 20px;
+					} //end tablet-small
+					@include mobile-medium {
+						font-size: 1.8rem;
+					} //end mobile-medium
+					@include mobile-small {
+						font-size: 1.8rem;
+						margin-bottom: 20px;
+					} //end mobile-small
+				} //end h4
 				p {
 					font-size: 1.6rem;
 					font-weight: lighter;
 					line-height: 1.6;
 					margin: 0;
+					@include tablet-small {
+						padding: 0 40px;
+						margin-bottom: 60px;
+					} //end tablet-small
+					@include mobile-medium {
+						padding: 0 30px;
+						margin-bottom: 60px;
+					} //end mobile-medium
+					@include mobile-small {
+						font-size: 1.5rem;
+						padding: 0 30px;
+						margin-bottom: 60px;
+					} //end mobile-small
 				} //end p
 			} //end banner-branding
 		} // end ul
@@ -192,41 +380,103 @@ section#main-heading {
 				color: #fff;
 				background: $secondary-color;
 			} //end a:hover
+			@include mobile-medium {
+				width: 190px;
+				font-size: 1.6rem;
+			} //end mobile-medium
+			@include mobile-small {
+				width: 150px;
+				font-size: 1.4rem;
+			} //end mobile-small
 		} //end a btn.read
 	} //end #banner-section
 
 section#our-news {
 	padding: 80px 0 100px 0;
 	text-align: center;
+	@include mobile-medium {
+		padding: 60px 0 80px 0;
+	} //end mobile-medium
+	@include mobile-small {
+		padding: 60px 0 50px 0;
+	}//end mobile-small
 	.container { @include center(1200px); }
 	h2 {
 		color: $primary-color;
 		font-size: 3rem;
 		font-weight: bold;
 		margin-bottom: 85px;
+		@include tablet-small {
+			margin-bottom: 65px;
+		}
+		@include mobile-medium {
+			margin-bottom: 50px;
+		} //end mobile-medium
+		@include mobile-small {
+			margin-bottom: 40px;
+		} //end mobile-small
 	} //end h2
 	ul { 
 		li {
 			display: inline-block;
 			width: 30%;
 			margin: 0;
+			@include tablet-small {
+				width: 100%;
+				display: block;
+				margin-bottom: 45px;
+			} //end tablet-small
+			@include mobile-medium {
+				width: 100%;
+				display: block;
+				margin-bottom: 45px;
+			} //end mobile-medium
+			@include mobile-small {
+				width: 100%;
+				display: block;
+				margin-bottom: 45px;
+			} //end mobile-small
 		} //end li
 		li:nth-child(2) {
 			margin: 0 2%;
+			@include tablet-small {
+				margin: 0 0 45px 0;
+			} //end tablet-small
+			@include mobile-medium {
+				margin: 0 0 45px 0;
+			} //end mobile-medium
+			@include mobile-small {
+				margin: 0 0 45px 0;
+			} //end mobile-small
 		} //end li:nth-child(2)
 		img {
 			margin-bottom: 35px;
 			cursor: pointer;
 			width: 100%;
-			//@include desktop {
-				//width: 100%;
-			//}
+			@include tablet-small {
+				width: 60%;
+			} //end tablet-small
+			@include mobile-medium {
+				width: 60%;
+			} //end mobile-medium
+			@include mobile-small {
+				width: 70%;
+			} //end mobile-small
 		} //end img
 		h4 {
 			color: $primary-color;
 			font-size: 2.4rem;
 			font-weight: bold;
 			margin-bottom: 15px;
+			@include tablet-small {
+				font-size: 2rem;
+			} //end tablet-small
+			@include mobile-medium {
+				font-size: 1.8rem;
+			} //end mobile-medium;
+			@include mobile-small {
+				font-size: 1.8rem;
+			} //end mobile-small
 		} //end h4
 		p {
 			color: $primary-color;
@@ -235,6 +485,15 @@ section#our-news {
 			line-height: 1.8;
 			padding: 0 1%;
 			margin-bottom: 40px;
+			@include tablet-small {
+				padding: 0 3%;
+			} //end tablet-small
+			@include mobile-medium {
+				padding: 0 3%;
+			} //end mobile-medium
+			@include mobile-small {
+				padding: 0 4%;
+			} //end mobile-small
 		} //end p
 		a.btn-more {
 			@include border-radius(30px);
@@ -249,6 +508,18 @@ section#our-news {
 				background: $secondary-color;
 				color: $white;
 			} //end a.btn-more hover
+			@include tablet-small {
+				font-size: 1.5rem;
+				padding: 20px 12%;
+			} //end tablet-small
+			@include mobile-medium {
+				font-size: 1.5rem;
+				padding: 20px 10%;
+			}//end mobile-medium
+			@include mobile-small {
+				font-size: 1.5rem;
+				padding: 20px 10%;
+			} //end mobile-small
 		} //end a.btn-more
 	} //end ul
 } //end our-news section
@@ -265,6 +536,12 @@ section#newsletter-section {
 		font-weight: bold;
 		color: $white;
 		margin-bottom: 25px;
+		@include mobile-medium {
+			font-size: 2.5rem;
+		} //end mobile-medium
+		@include mobile-small {
+			font-size: 2rem;
+		} //end mobile-small
 	} //end h2
 	p {
 		display: block;
@@ -274,6 +551,16 @@ section#newsletter-section {
 		line-height: 1.6;
 		padding: 0 23%;
 		margin-bottom: 40px;
+		@include tablet-small {
+			padding: 0 10%;
+		} //end tablet-small
+		@include mobile-medium {
+			padding: 0 5%;
+		} //end mobile-medium
+		@include mobile-small {
+			font-size: 1.4rem;
+			padding: 0 5%;
+		} //end mobile-small
 	} //end p
 	input[type="email"] {
 		width: 300px;
@@ -290,6 +577,21 @@ section#newsletter-section {
 		&::-moz-input-placeholder {
 			color: $white;
 		} //end moz placeholder
+		@include tablet-small {
+			width: 250px;
+			font-size: 1.6rem;
+			padding: 20px 20px 25px 20px;
+		} //end tablet-small
+		@include mobile-medium {
+			width: 220px;
+			font-size: 1.5rem;
+			padding: 20px 20px 25px 20px;
+		} //end mobile-medium
+		@include mobile-small {
+			width: 180px;
+			font-size: 1.4rem;
+			padding: 20px;
+		} //end mobile-small
 	} //end input email
 	button.btn-signup {
 		@include border-radius(25px);
@@ -309,6 +611,21 @@ section#newsletter-section {
 			background: $secondary-color;
 			border: 1px solid $secondary-color;
 		} //end hover
+		@include tablet-small {
+			width: 180px;
+			font-size: 1.5rem;
+			left: -22px;
+		} //end tablet-small
+		@include mobile-medium {
+			width: 160px;
+			font-size: 1.5rem;
+			left: -22px;
+		} //end mobile-medium
+		@include mobile-small {
+			width: 120px;
+			font-size: 1.5rem;
+			left: -18px;
+		} //end mobile-small
 	} //end btn-signup
 } //end newsletter-section
 section#product-details {
@@ -316,42 +633,88 @@ section#product-details {
 	background: $white;
 	color: $product-text;
 	padding: 120px 0 140px 0;
+	@include tablet-small {
+		padding: 80px 3% 100px 3%;
+	} //end tablet-small
+	@include mobile-medium {
+		padding: 70px 4% 80px 4%;
+	} //end mobile-medium
+	@include mobile-small {
+		padding: 60px 4% 50px 4%;
+	} //end mobile-small
 	.container { @include center(1200px); }
 	#product-one {
 		width: 50%;
 		float: left;
 		margin: 0 0 125px 0;
+		@include tablet-small {
+			width: 100%;
+			float: none;
+			margin-bottom: 80px;
+		} //end tablet-small
+		@include mobile-medium {
+			width: 100%;
+			float: none;
+			margin-bottom: 80px;
+		} //end mobile-medium
+		@include mobile-small {
+			width: 100%;
+			float: none;
+			margin-bottom: 60px;
+		} //end mobile-small
 		a {
 			background: $secondary-color;
 			@include transition(all, 0.3s);
 			&:hover { 
 				background: $product-hover1;
 				text-decoration: underline;
-			}
-		}
-	}
+			} //end hover
+		} //end a
+	} //end #product-one
 	#product-two {
 		width: 55%;
 		float: right;
+		@include tablet-small {
+			width: 100%;
+			float: none;
+		} //end tablet-small
+		@include mobile-medium {
+			width: 100%;
+			float: none;
+		} //end mobile-medium
+		@include mobile-small {
+			width: 100%;
+			float: none;
+		} //end mobile-small
 		a {
 			background: #4b4e73;
 			@include transition(all, 0.3s);
 			&:hover {
 				background: $product-hover2;
 				text-decoration: underline;
-			}
-		}
-	}
+			} //end hover
+		} //end a
+	} //end #product-two
 	h3 {
 		font-size: 3rem;
 		font-weight: bold;
 		margin: 0 0 25px 0;
-	}
+		@include mobile-small {
+			font-size: 2rem;
+		} //end mobile-small
+	} //end h3
 	p {
 		font-size: 1.6rem;
 		line-height: 1.8;
 		margin: 0 0 40px 0;
-	}
+		@include mobile-medium {
+			margin-bottom: 25px;
+		} //end mobile-medium
+		@include mobile-small {
+			font-size: 1.5rem;
+			margin-bottom: 25px;
+		} //end mobile-small
+	} //end p
 	a {
 		@include border-radius(25px);
 		display: inline-block;
@@ -360,7 +723,17 @@ section#product-details {
 		color: $white;
 		text-decoration: none;
 		padding: 17px 72px;
-		}
+		@include mobile-medium {
+			width: 180px;
+			font-size: 1.5rem;
+			padding: 17px 60px;
+		} //end mobile-medium
+		@include mobile-small {
+			width: 150px;
+			font-size: 1.5rem;
+			padding: 17px 40px;
+		} //end mobile-small
+	} //end a
 }  //end product-details section
 footer {
 	color: $white;
@@ -371,32 +744,79 @@ footer {
 		@include clearfix();
 		background: $footer-bg;
 		padding: 90px 0 55px 0;
+		@include mobile-medium {
+			padding: 50px 0 45px 0;
+		} //end mobile-medium
+		@include mobile-small {
+			padding: 40px 0 20px 0;
+		} //end mobile-small
 		ul {
 			width: 33%;
 			float: left;
-		}
+			&:last-of-type {
+				border: none;
+			} //end last-of-type
+			@include tablet-small {
+				width: 100%;
+				float: none;
+				margin-bottom: 40px;
+				border-bottom: 1px dashed #FFF;
+			} //end tablet-small
+			@include mobile-medium {
+				width: 100%;
+				float: none;
+				margin-bottom: 40px;
+				border-bottom: 1px dashed #fff;
+			} //end mobile-medium
+			@include mobile-small {
+				width: 100%;
+				float: none;
+				margin-bottom: 40px;
+				border-bottom: 1px dashed #fff;
+			} //end mobile-small
+		} //end ul
 		li {
 			display: block;
 			margin: 0 0 20px 0;
-		}
+		} //end li
 		a {
 			display: block;
 			color: $white;
 			text-decoration: none;
-		}
-	}
+			@include mobile-small {
+				font-size: 1.5rem;
+			} //end mobile-small
+		} //end a
+	} //end #footer-links
 	#footer-body {
 		background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(6,30,97,0) 84%, rgba(7,36,115,0) 100%), url('../img/newsletter-and-footer-bg.jpg') 0 0 no-repeat;
 		background-size: cover;
 		padding: 90px 0 240px 0;
+		@include tablet-small {
+			padding: 90px 0 120px 0;
+		} //end tablet-small
+		@include mobile-medium {
+			padding: 70px 0 50px 0;
+		} //end mobile-medium
+		@include mobile-small {
+			padding: 60px 0 30px 0;
+		} //end mobile-small
 		p {
 			font-weight: lighter;
 			line-height: 1.8;
-		}
+			@include mobile-medium {
+				font-size: 1.5rem;
+				padding: 0 2%;
+			}//end mobile-medium
+			@include mobile-small {
+				font-size: 1.4rem;
+				padding: 0 1%;
+			} //end mobile-small
+		} //end p
 		a {
 			color: $white;
 			text-decoration: none;
 			font-weight: bold;
-		}
-	}
-}
+		} //end a
+	} //end #footer-body
+} //end footer
